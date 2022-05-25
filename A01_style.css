@@ -1,0 +1,60 @@
+
+/*Karten design*/
+#map {
+    width: 80%;
+    height: 100%;
+}
+
+
+html, body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*Tabellen design*/
+
+#Datenbereich {
+    background-color: rgb(118, 138, 138);
+    position: absolute; top: 55%; right: 1%;
+
+}
+
+h1 {
+    background-color: #7ab51d;
+    width: 15%;
+    position: absolute; top: 10px; right: 5%;
+    z-index: 1;
+}
+
+#eingabe {
+    position: absolute; 
+    top: 30%;
+    left: 5%;
+}
+
+textarea{
+    width: 100%;
+    height: 150%;
+}
+
+#knopf {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    z-index: 3;
+}
+
+#demo {
+    font-family: Verdana;
+}
+
+#alles{
+    background-color: #9d9d9d;
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    top: 0%;
+    left: 80%;
+    z-index: 0;
+}

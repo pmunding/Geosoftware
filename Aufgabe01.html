@@ -1,0 +1,65 @@
+<!--
+Hier ist noch einiges zum ausprobieren auskommentiert 
+-->
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distance to my Point</title>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="A01_style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.2/leaflet.draw.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.2/leaflet.draw.js"></script>
+
+</head>
+
+<body>
+
+  <div id="map"></div>
+ 
+    <h1>Here you can see your distance to..</h1>
+    <div id="alles">
+    <div>
+      <p id="x"></p>
+    </div>
+
+
+    <!--creating a table for calculated values-->
+    <div id="Datenbereich">
+
+    </div>
+
+
+
+    <!--Eingabe Feld für das GeoJson-->
+    <div id="eingabe">
+      <p id="textfeld">Hier Findest du die 10 nächsten Haltestellen</p>
+      <textarea name="justtext" id="justtext" onclick="this.value=''"></textarea>
+      
+    </div>
+
+
+    <!--Button Aktuelle Position Abfragen-->
+    <div id="knopf">
+      <button id="position" onclick="getLocation()">Get Position</button>
+      <p id="demo"></p>
+    </div>
+
+  </div>
+
+  <!--JS einbindung-->
+  <script src="leaflet.js"></script>
+  <script src="mainCode.js"></script>
+
+
+
+
+</body>
+
+</html>
